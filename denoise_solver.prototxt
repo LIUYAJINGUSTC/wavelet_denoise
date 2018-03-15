@@ -1,0 +1,25 @@
+# The train/test net protocol buffer definition
+net: "D:/caffe/caffe-windows-master/examples/denoise/wavelet_denoise/denoise_net.prototxt"
+test_iter: 556
+# Carry out testing every 500 training iterations.
+test_interval: 500
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.00001
+momentum: 0.9
+weight_decay: 0
+gamma: 0.1
+stepsize: 100000
+# The learning rate policy
+lr_policy: "fixed"
+# Display every 100 iterations
+display: 100
+# The maximum number of iterations
+#max_iter: 15000000
+max_iter: 500000
+# snapshot intermediate results
+snapshot: 10000
+snapshot_prefix: "D:/caffe/caffe-windows-master/examples/denoise/wavelet_denoise/shot/_iter0.00001"
+# solver mode: CPU or GPU
+#solver_mode: GPU
+solver_mode: CPU
+
